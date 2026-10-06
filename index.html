@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Te Invito a Depositarme</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-bubbles"></div>
+
+    <header class="hero">
+        <nav class="topbar">
+            <div class="logo">
+                <span>💳</span>
+                <span>Invitación Digital</span>
+            </div>
+            <a href="#confirmar" class="nav-btn">Confirmar</a>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">Estás cordialmente invitado a</p>
+            <h1>Te invito a<br><span>Depositarme</span></h1>
+            <p class="hero-text">
+                Tu presencia es el mejor regalo, pero si deseas apoyarme con un depósito,
+                será muy bien recibido.
+            </p>
+
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>Días</small>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>Horas</small>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>Minutos</small>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>Segundos</small>
+                </div>
+            </div>
+
+            <a href="#evento" class="scroll-btn">
+                Ver detalles <span>⬇️</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-card image-section">
+            <img src="IMG/alcancia.png" alt="Alcancía" class="main-image">
+        </section>
+
+        <section class="section-card" id="evento">
+            <h2>Detalles del evento</h2>
+            <div class="grid-info">
+                <article class="info-card">
+                    <div class="icono">📅</div>
+                    <h3>Fecha</h3>
+                    <p>Jueves 15 de mayo de 2025</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="icono">⏰</div>
+                    <h3>Hora</h3>
+                    <p>4:00 p. m.</p>
+                </article>
+
+                <article class="info-card">
+                    <div class="icono">📍</div>
+                    <h3>Lugar</h3>
+                    <p>Mi casa</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-card">
+            <h2>Datos para depositar</h2>
+
+            <div class="bank-card">
+                <div class="bank-header">
+                    <span>🏦</span>
+                    <span>BBVA</span>
+                </div>
+
+                <p><strong>Nombre:</strong> Walter Yair Salas Armendariz</p>
+                <p><strong>Tarjeta:</strong> 4152 31XX XXXX XXXX</p>
+                <p><strong>CLABE:</strong> 012345678901234567</p>
+            </div>
+
+            <div class="qr-box">
+                <p>Escanea para apoyar</p>
+                <img src="IMG/QR.png" alt="Código QR" class="qr-image">
+            </div>
+        </section>
+
+        <section class="section-card" id="ubicacion">
+            <h2>Ubicación</h2>
+            <a href="https://maps.app.goo.gl/2U6yhtvPtaeF9E6m9" target="_blank" class="maps-btn">
+                <span>📍</span>
+                <span>Ver ubicación en Google Maps</span>
+            </a>
+        </section>
+
+        <section class="section-card" id="confirmar">
+            <h2>Confirma tu asistencia</h2>
+
+            <form id="formulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="Escribe tu teléfono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="personas">Número de personas</label>
+                    <input type="number" id="personas" min="1" placeholder="¿Cuántos vendrán?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asistencia">¿Asistirás?</label>
+                    <select id="asistencia" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="Sí asistiré">Sí asistiré</option>
+                        <option value="No podré asistir">No podré asistir</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" placeholder="Escribe un mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Confirmar asistencia
+                </button>
+
+                <p id="mensaje-envio"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Gracias por tu apoyo ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
